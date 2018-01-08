@@ -1,3 +1,4 @@
+
 var saySomething = function (whatToSay){
 	alert(whatToSay);
 }
@@ -27,7 +28,7 @@ var getInput = function (message){
 	return value;
 }
 
-// MAIN
+/* MAIN
 var number1 = parseInt(getInput("What is your first number?"));
 var number2 = parseInt(getInput("What is your second number?"));
 var result = add(number1, number2);
@@ -36,7 +37,7 @@ alert("Your result is: \n"+ result);
 /*var add = function(number1, number2) {
   return number1 + number2;
 };
-
+*/
 var number1 = parseInt(prompt("Enter a number:"));
 var number2 = parseInt(prompt("Enter another number:"));
 var result = add(number1, number2);

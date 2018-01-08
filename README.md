@@ -13,7 +13,7 @@ _written at *Epicodus* on 1/8/18_
 
 * _Download the repository and connect to index.html with your browser._
 
-_Your browser should have javascript_
+* _Your browser should have javascript_
 
 ## Known Bugs
 
