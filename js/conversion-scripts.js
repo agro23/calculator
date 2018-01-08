@@ -1,32 +1,57 @@
 
-var saySomething = function (whatToSay){
-	alert(whatToSay);
-}
-
-var add = function(number1, number2){
-	return number1+number2;
-}
-
-var subtract = function(number1, number2){
-	return number1-number2;
-}
-
-var multiply = function(number1, number2){
-	return number1*number2;
-}
-
-var divide = function(number1, number2){
-	return number1/number2;
-}
-
-var modulo = function(number1, number2){
-	return number1%number2;
-}
-
 var getInput = function (message){
 	var value = prompt(message);
 	return value;
 }
+
+var convertGallonsToLiters = function (gal){
+	// 1 gallon = 3.785411784 liters
+	var gallons = parseFloat(gal);
+	var liters = gallons * 3.785411784;
+	alert("That is " + liters.toString() + " liters.");
+}
+convertGallonsToLiters(getInput("How many gallons to convert to liters?"));
+
+/*
+What unit are you converting from:
+
+1-teaspoons
+2-tablespoons
+3-ounces
+4-fluid ounces
+5-cups
+6-pints
+7-quarts
+8-gallons
+
+What unit are you converting to:
+
+1-teaspoons
+2-tablespoons
+3-ounces
+4-fluid ounces
+5-cups
+6-pints
+7-quarts
+8-gallons
+
+
+Volume:
+
+ounces to grams  -- n * 28.35
+pounds to grams above * 16
+tblspn to milliliters -- n * 14.786765
+tablespoon is 0.3333 teaspoons
+teaspoons to milliliters -- n * 0.20288
+teaspoons to fluid ounce -- n * 0.166667
+cup to milliliters --  n * 236.5882
+pint is two cups
+quart is two pints
+gallon 8 pints
+
+milliliters to liters
+
+*/
 
 /* MAIN
 var number1 = parseInt(getInput("What is your first number?"));
@@ -38,7 +63,7 @@ alert("Your result is: \n"+ result);
   return number1 + number2;
 };
 */
-var number1 = parseInt(prompt("Enter a number:"));
+/*var number1 = parseInt(prompt("Enter a number:"));
 var number2 = parseInt(prompt("Enter another number:"));
 var result = add(number1, number2);
 alert(result);
